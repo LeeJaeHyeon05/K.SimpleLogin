@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">K.SimpleLogin</string>
+    <string name="idtext">아이디</string>
+    <string name="passwordtext">비밀 번호</string>
+</resources>
