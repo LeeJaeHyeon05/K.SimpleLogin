@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     //여기에 아이디와 비밀번호를 말해준다
     private val p1 = idpassword("p1", "123")
-
+    val all_id_p = p1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
             // 간단 로그인을 위한 메인
             //만약 아이디와 비번이 인풋과 같으면 intent를 활용해 test 페이지를 보여준다
-            if (inputLogin == p1.id && inputPassword == p1.password) {
+            if (inputLogin == all_id_p.id && inputPassword == all_id_p.password) {
                 val intent = Intent(this, test::class.java )
                 startActivity(intent)
             //만약 안 같고 비어있으면 이 구문을 실행
